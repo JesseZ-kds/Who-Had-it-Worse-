@@ -13,29 +13,7 @@ let rightGraphics = new PIXI.Graphics();
 leftApp.stage.addChild(leftGraphics);
 rightApp.stage.addChild(rightGraphics);
 
-let frames = {
-    "Demeter's Revenge": {
-        "value": 1,
-        "text": "Demeter and Limos, 2 opposing goddesses teamed up the King of Thessalian, Erysichthon, who cut down all the wood in Demeter's sacred grove, to use for his personal gain. Overnight, Limos cursed him to always feel hungry. The King ate everything in the town, but that was not enough, so he sold his own Daughter, Mestra, so he could buy more food.",
-        "person": "Mestra",
-        "colour": {
-            "background": 0xac75d1,
-            "circle": 0x8c52b3,
-            "text": 0xFFFFFF
-        }
-    },
-    "hi": {
-        "value": 2,
-        "text": "Hellp ",
-        "person": "Hekwsb",
-        "colour": {
-            "background": 0x7ed2e0,
-            "circle": 0x3b9cc4,
-            "text": 0x000000
-        }
-    },
-};
-
+let frames = require('./framse.json')
 let availableFrames = Object.keys(frames);
 
 function resizeCanvases() {
